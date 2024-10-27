@@ -22,7 +22,7 @@
     .container {
       width: 100%;
       max-width: 500px;
-      background-color: gray;
+      background-color: white;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       padding-bottom: 20px;
@@ -30,7 +30,7 @@
     .sticky-header {
       position: sticky;
       top: 0;
-      background-color: gray;
+      background-color: white;
       z-index: 100;
       padding: 10px 0;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -296,8 +296,8 @@
       resultItem.setAttribute("data-duration", milliseconds);
       resultItem.setAttribute("data-moves", moveCount);
       resultItem.innerHTML = `
-        Süre: <span class="duration">${minutes}:${displaySeconds}.${displayMilliseconds}</span>, 
-        Hamle: <span class="moves">${moveCount}</span>`;
+        Time: <span class="duration">${minutes}:${displaySeconds}.${displayMilliseconds}</span>, 
+        Move.: <span class="moves">${moveCount}</span>`;
       resultsList.appendChild(resultItem);
 
       highlightBestResults();
